@@ -12,8 +12,11 @@
         $password = $_POST['password'];
         
         if ($username == 'admin' && $password == '123') {
-            header("Location: addNewContact.html");
+            header("Location: ../common/addNewContact.html");
             exit();
+        }
+        else {
+            echo "Invalid Credentials";
         }
         
         ?>
